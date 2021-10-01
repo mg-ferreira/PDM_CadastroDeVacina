@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { StyleSheet, View, SafeAreaView } from 'react-native';
+import { StyleSheet, SafeAreaView } from 'react-native';
 
 import EntradaDeDados from './components/EntradaDeDados';
 import ExibeVacinas from './components/ExibeVacinas';
@@ -16,7 +16,7 @@ export default function App() {
       <EntradaDeDados onSubmit={handleSubmit}/>
       <ExibeVacinas lista={listaVacinas}/>
     </SafeAreaView>
-  );
+  )
 }
 
 const styles = StyleSheet.create({
